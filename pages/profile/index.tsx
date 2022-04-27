@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 
-import { ProfilePic } from "../../components/ProfilePic";
+import { ProfilePic } from "@components/ProfilePic";
 
 const Profile: NextPage = () => {
   return (

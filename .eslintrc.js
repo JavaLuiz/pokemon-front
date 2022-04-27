@@ -17,6 +17,7 @@ module.exports={
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
+    "project": "./tsconfig.json",
     "ecmaFeatures": {
       "jsx": true
     },
@@ -69,6 +70,22 @@ module.exports={
     "no-use-before-define":"off",
     "camelcase":"off",
     "@typescript-eslint/ban-ts-ignore": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node":{
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      },
+      "typescript": {
+        "alwaysTryTypes": true,
+      }
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx"
+      ]
+    }
   },
   ignorePatterns:[
     "**/*.js",
