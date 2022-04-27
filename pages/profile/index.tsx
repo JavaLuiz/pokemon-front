@@ -1,16 +1,14 @@
-import type { NextPage } from 'next'
+import type { NextPage } from "next";
 
-
-import { ProfilePic } from '../../components/ProfilePic'
-
+import { ProfilePic } from "../../components/ProfilePic";
 
 const Profile: NextPage = () => {
   return (
-        <div>
+    <div>
       <ProfilePic />
-         <h1>aaaaa</h1>
-      </div>
-  )
-}
+      <h1>aaaaa</h1>
+    </div>
+  );
+};
 
-export default Profile
+export default Profile;
